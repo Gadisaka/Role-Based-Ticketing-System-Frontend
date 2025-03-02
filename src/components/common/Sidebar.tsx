@@ -6,7 +6,7 @@ import CustomerSidebar from "../customer/customerSidebar";
 
 const Sidebar: React.FC = () => {
   //   const role = useAuthStore((state) => state.userRole);
-  const [role, setRole] = useState("company");
+  const [role, setRole] = useState("agent");
 
   switch (role) {
     case "company":
