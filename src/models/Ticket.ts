@@ -110,39 +110,39 @@ export const fakeTickets: ITicket[] = [
     ],
     tags: ["feature-request", "UI"],
   },
-  {
-    title: "Data Sync Issue",
-    description: "Data not syncing between mobile and web app.",
-    status: "Closed",
-    priority: "High",
-    companyName: "SyncSolutions",
-    customerName: "Bob Brown",
-    agent: "Agent C",
-    history: [
-      {
-        action: "created",
-        user: "Bob Brown",
-        timestamp: new Date(),
-      },
-      {
-        action: "assigned",
-        user: "Admin",
-        timestamp: new Date(),
-      },
-      {
-        action: "updated",
-        user: "Agent C",
-        timestamp: new Date(),
-      },
-      {
-        action: "closed",
-        user: "Agent C",
-        timestamp: new Date(),
-      },
-    ],
-    attachments: ["sync_log.txt"],
-    deadline: new Date(new Date().setDate(new Date().getDate() + 7)),
-  },
+  // {
+  //   title: "Data Sync Issue",
+  //   description: "Data not syncing between mobile and web app.",
+  //   status: "Closed",
+  //   priority: "High",
+  //   companyName: "SyncSolutions",
+  //   customerName: "Bob Brown",
+  //   agent: "Agent C",
+  //   history: [
+  //     {
+  //       action: "created",
+  //       user: "Bob Brown",
+  //       timestamp: new Date(),
+  //     },
+  //     {
+  //       action: "assigned",
+  //       user: "Admin",
+  //       timestamp: new Date(),
+  //     },
+  //     {
+  //       action: "updated",
+  //       user: "Agent C",
+  //       timestamp: new Date(),
+  //     },
+  //     {
+  //       action: "closed",
+  //       user: "Agent C",
+  //       timestamp: new Date(),
+  //     },
+  //   ],
+  //   attachments: ["sync_log.txt"],
+  //   deadline: new Date(new Date().setDate(new Date().getDate() + 7)),
+  // },
   {
     title: "UI Bug on Dashboard",
     description: "Dashboard widgets not displaying correctly.",

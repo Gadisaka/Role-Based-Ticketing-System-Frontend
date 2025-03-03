@@ -10,7 +10,7 @@ interface TicketCardProps {
 const TicketCard = ({ data }: TicketCardProps) => {
   return (
     <div className="w-[90%] bg-white shadow-md rounded-lg min-h-fit flex p-2 items-start group relative">
-      <div className="flex-wrap flex-col px-2">
+      <div className="flex flex-col px-2 w-full  ">
         <h1>{data.description}</h1>
         <h1 className="font-semibold">
           <span
@@ -30,7 +30,7 @@ const TicketCard = ({ data }: TicketCardProps) => {
             {data.priority}
           </span>
         </h1>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center w-full ">
           <h1>{data.title}</h1>
           <Avatar
             alt="User Profile"

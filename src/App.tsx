@@ -11,6 +11,8 @@ import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import Sidebar from "./components/common/Sidebar";
 import Navbar from "./components/common/Navbar";
+import Ticket from "./pages/Ticket";
+import History from "./pages/History";
 
 function App() {
   const isAuthenticated = true; // Mock authentication state
@@ -29,6 +31,14 @@ function App() {
           <Route
             path="/dashboard"
             element={isAuthenticated ? <Dashboard /> : <Navigate to="/auth" />}
+          />
+          <Route
+            path="/tickets"
+            element={isAuthenticated ? <Ticket /> : <Navigate to="/auth" />}
+          />
+          <Route
+            path="/history"
+            element={isAuthenticated ? <History /> : <Navigate to="/auth" />}
           />
 
           <Route path="/auth" element={<Auth />} />
