@@ -14,7 +14,7 @@ const Signup: React.FC = () => {
     return (
       <Box className="flex h-full w-full">
         {/* Left Section with Background */}
-        <Box className="w-1/2 h-full hidden md::flex justify-center items-center relative">
+        <Box className="w-1/2 h-full hidden md:flex justify-center items-center relative">
           <img
             src={bg}
             alt="bg"

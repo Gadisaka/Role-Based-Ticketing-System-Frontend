@@ -5,3 +5,12 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.section {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.section::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

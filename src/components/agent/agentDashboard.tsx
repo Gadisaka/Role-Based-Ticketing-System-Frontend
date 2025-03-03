@@ -1,15 +1,26 @@
 import React from "react";
 import Section from "./section";
+import { fakeTickets } from "../../models/Ticket";
 
 const AgentDashboard = () => {
-  const sections = ["Open", "In Progress", "Resolved", "Closed"];
-
   return (
-    <div className="pl-[75px] gap-4 flex justify-center w-full h-full items-center ">
-      <Section />
-      <Section />
-      <Section />
-      <Section />
+    <div className="pl-[175px]  md:pl-[75px] gap-4 flex justify-center w-full h-full items-center overflow-x-scroll ">
+      <Section
+        data={fakeTickets.filter((ticket) => ticket.status === "Open")}
+        sectionTitle="Open"
+      />
+      <Section
+        data={fakeTickets.filter((ticket) => ticket.status === "In Progress")}
+        sectionTitle="In Progress"
+      />
+      <Section
+        data={fakeTickets.filter((ticket) => ticket.status === "Resolved")}
+        sectionTitle="Resolved"
+      />
+      <Section
+        data={fakeTickets.filter((ticket) => ticket.status === "Closed")}
+        sectionTitle="Closed"
+      />
     </div>
   );
 };

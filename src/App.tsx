@@ -18,10 +18,12 @@ function App() {
   return (
     <Router>
       <Box className="w-full h-screen flex flex-col">
-        <Box>
-          <Sidebar />
-          <Navbar />
-        </Box>
+        {isAuthenticated && (
+          <Box>
+            <Sidebar />
+            <Navbar />
+          </Box>
+        )}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route

@@ -5,10 +5,10 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 
 const Navbar = () => {
   return (
-    <nav className="h-[50px] bg-gray-800 text-white flex items-center justify-between px-4 w-full">
+    <nav className="h-[50px] bg-gray-800 text-white flex items-center justify-between pl-24 px-6 w-full">
       {/* Left Side - Logo or Home Link */}
       <Link to="/" className="text-lg font-semibold">
-        Home
+        Rija
       </Link>
 
       {/* Right Side - Notifications & Avatar */}
