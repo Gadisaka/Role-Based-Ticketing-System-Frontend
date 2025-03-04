@@ -64,7 +64,7 @@ const Section = ({
                 "&:hover": { backgroundColor: "#12344f" },
                 ".group:hover &": { display: "flex" }, // MUI equivalent of `group-hover:flex`
               }}
-              onClick={() => console.log("bab")}
+              // onClick={() => setDropDownOpen(!dropDownOpen)}
             >
               <MoreVertIcon />
             </Button>

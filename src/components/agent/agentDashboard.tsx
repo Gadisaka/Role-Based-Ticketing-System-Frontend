@@ -6,7 +6,7 @@ import { companies } from "../../models/Company";
 
 const AgentDashboard = () => {
   return (
-    <div className="pl-[175px]  md:pl-[75px] gap-4 grid grid-cols-1 md:grid-cols-3 justify-items-center w-full h-full p-5">
+    <div className="pl-[175px]  md:pl-[75px] gap-4 grid grid-cols-1 md:grid-cols-4 justify-items-center w-full h-full p-5">
       <Box className="flex flex-col justify-center items-center p-5 shadow-md rounded-lg  h-[90%] ">
         <Typography variant="body1" color="initial">
           Tasks Assigned To Me
