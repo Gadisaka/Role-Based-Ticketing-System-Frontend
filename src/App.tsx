@@ -15,7 +15,7 @@ import Ticket from "./pages/Ticket";
 import History from "./pages/History";
 
 function App() {
-  const isAuthenticated = true; // Mock authentication state
+  const isAuthenticated = false; // Mock authentication state
 
   return (
     <Router>
